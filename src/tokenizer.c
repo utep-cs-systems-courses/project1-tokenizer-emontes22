@@ -50,5 +50,43 @@ int count_words(char *str)
   return count;
 }
 
+char *copy_str(char *inStr, int len)
+{
+  char *temp = (char *)malloc(len + 1);
+  
+  while (*inStr != '\0')
+    {
+      *temp = *inStr;
+      temp++;
+      inStr++;
+    }
+  *temp = '\0';
+  
+  return temp;
+}
+//TODO
+char **tokenize(char* str)
+{
+  
+}
 
-    
+void print_tokens(char **str)
+{
+  while (non_space_char(*str))
+    {
+      printf("%s\n", *str);
+      str++;
+    }
+}
+
+void free_tokens(char **str)
+{
+  char **temp = str;
+  
+  while (*temp != "")
+    {
+      free(*temp);
+      temp++;
+    }
+  free(temp);
+}
