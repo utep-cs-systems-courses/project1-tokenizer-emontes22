@@ -48,7 +48,7 @@ int count_words(char *str)
   return count;
 }
 
-char *copy_str(char *inStr, int len)
+char *copy_str(char *inStr, short len)
 {
   char *temp = (char *) malloc(len + 1);
   
