@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <history.h>
+#include "history.h"
 
 /* Function to initialize the linked list */
 List *init_history()
 {
-  List *list = (List *)malloc(sizeof(List));
+  List *list = (List*)malloc(sizeof(List));
   list->root = NULL;
   return list;
 }
