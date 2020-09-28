@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "history.h"
 #include "tokenizer.h"
+#include <string.h>
 
 /* Function to initialize the linked list */
 List *init_history()
